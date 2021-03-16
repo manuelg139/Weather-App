@@ -1,23 +1,92 @@
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #222;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+   
+}
+
+
 header {
     padding: 0.5%;
-    font-size: 40px;
+    font-size: 180px;
     text-align: center;
     color: white;
-    background-color: black;
+    
 }
-#search-menu{
-    text-align-last: center;
-    border: 3px solid black;
-    margin: 25px 5px 25px 0px;
-    max-width: 25%;
-    padding: 15px;
-}
-#info-wrap{
+
+.main-wrapper {
+ 
+   background: #000000d0; 
+  /*   background: linear-gradient(
+    to right bottom,
+    rgba(12, 12, 12, 0.7),
+    rgba(5, 153, 211, 0.3) )*/
   
-    border: 3px solid black;
-    margin: 25px 0px 25px 0px;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 800%;
+    max-width: 420px;
+    margin: 2rem;
+    font-family: 'Open Sans', sans-serif; 
+    
+} 
+
+h1 {
+    color: white;
+    font-family: 'Open Sans', sans-serif; 
 
 }
+
+h3 {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#search-menu{
+    text-align-last: center;
+    margin: 25px 5px 25px 0px;
+}
+
+#info-wrap{
+    margin: 25px 0px 25px 0px;
+}
+
+.recents{
+    width: 80%;
+    height: 30px;
+    text-align: left;
+    margin: auto;
+    margin-top: -20px;
+}
+
+ul#city-list {
+	list-style: none;
+    display: inline-block;
+    text-align: center;
+   
+	}
+
+ul#city-list li {
+		display: inline-block;
+        text-align: center;
+        margin: 0 20px ;
+        border-radius: 24px;
+        padding:0 10px;
+        
+	}
+
+ul#city-list li:hover {
+    background: #9c9c9c6b;
+}
+
+
 
 #currentCity {
     text-align-last: center;
@@ -25,10 +94,47 @@ header {
     margin: 25px 0px 25px 0px;
 }
 
-
 #weekly-forcast {
     text-align-last: center;
     border: 3px solid black;
     margin: 10px 0px 25px 0px;
 }
 
+#city-input {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: #7c7c7c2b;
+    max-width: 80%;
+    color: white;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 100px);
+}
+
+#searchBtn {
+
+    fill: currentColor;
+    stroke: currentColor;
+    stroke-width: 0;
+    height: 1.5em;
+    width: 1.4em;
+}
+
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 44px;
+    width: 44px;
+    outline: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+
+  button:hover {
+    background: #7c7c7c6b;
+  }
